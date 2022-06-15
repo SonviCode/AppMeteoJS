@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Bleu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="container-header">
+                <div class="header-left">
+                    <div class="input-recherche">
+                        <div class="text-recherche">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="recherche">
+                        <label for="recherche">Recherche de lieu...</label>
+                        </div>
+                        <i class="fa-solid fa-map"></i>
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+                    <h1>Météo Bleu</h1>
+                    <p class="coordonnees"></p>
+                </div>
+                <div class="header-right">
+                    <div class="user">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-gear"></i></a>
+                    </div>
+                    <div class="temperature">
+                        <img src= alt="photo du temps" class="img-temps-actuel">
+                        <p class="degres"></p>
+                        <p class="description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="overlay-icone-chargement">
+            <img src="./ressources/chargement/circles.svg" alt="logo chargement">
+        </div>
+        <div class="wrapper">
+            
+            <!--SECTION METEO PAR JOURS-->
+            <section>
+                <div class="container-info-semaine">
+                    <div class="container-grid-semaine">
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine " >
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine">
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine">
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine">
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine">
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine">
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="jour-prevision-nom"></h2>
+                            <p></p>
+                            <img src="" alt="photo du temps" class="img-temps-semaine">
+                            <p class="degres-max temps-couleur-max"> </p>
+                            <p class="degres-min temps-couleur-min"></p>
+                            <p class="vent"> </p>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--SECTION METEO PAR HEURES-->
+            <section>
+                <div class="container-info-journee">
+                    <div class="day">
+                        <h3 class="jour-actuel"></h3>
+                        <p><i class="fa-solid fa-circle-arrow-right"></i></p>
+                    </div>
+                    <div class="container-grid-day">
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="heure-prevision"></h2>
+                            <img src="" alt="photo du temps" class="img-temps-jour">
+                            <p class="degres-prevision couleur-temps-heure" ></p>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+    </main>
+
+    <footer>
+        <div class="info-footer">
+            <p><a href="#">API by openweathermap</a></p>
+            <p><a href="https://github.com/SonviCode">Code by SonviCode</a></p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>

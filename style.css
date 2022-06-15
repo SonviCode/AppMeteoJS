@@ -1,0 +1,208 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: 'poppins';
+    color: black;
+    background: #f1f1f1;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+/* -------HEADER---------- */
+
+header {
+    background-color: #4C7BB9;
+    color: #f1f1f1;
+}
+
+.container-header {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* --------LEFT ------*/
+.input-recherche {
+    
+    background-color:#DDE2EA ;
+    color: gray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text-recherche {
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+}
+
+.input-recherche i{
+    padding: 15px;
+}
+
+.input-recherche label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+}
+
+#recherche {
+    border: none;
+    outline: none;
+    padding:  15px 25px 15px 0;
+}
+/* --------RIGHT --------*/
+
+.user a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0 0 30px;
+}
+
+.temperature {
+    text-align: end;
+    position: relative;
+}
+.temperature img{
+    position: absolute;
+    left: -30px;
+    top: 35px;
+}
+
+
+.temperature p:nth-child(2){
+    font-size: 50px;
+    padding-top: 40px;
+    line-height: 50px;
+}
+
+/* ------------------------MAIN------------------------------ */
+
+/*--- SECTION SEMAINE---*/
+.container-info-semaine{
+    padding-bottom:50px;
+}
+
+.container-grid-semaine {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-item {
+    background-color: #DDE2EA;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+/* --SECTION JOUR --- */
+
+.container-grid-day {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+    width: 100%; 
+}
+
+.day {
+    padding: 50px;
+    text-align: center;
+}
+
+.container-info-journee {
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* ------footer------------ */
+
+footer {
+    background-color: #DDE2EA;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.info-footer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-footer a{
+    color: black;
+    text-decoration:none;
+}
+
+/* anim chargement */
+
+.overlay-icone-chargement {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dde2ea81;
+    transition: opacity 1.1s ease-out;
+    z-index: 1000;
+}
+
+.overlay-icone-chargement img {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disparition {
+    opacity: 0;
+}
+
+/* couleur degres */
+.tres-tres-chaud {
+    background: red;
+}
+
+.tres-chaud {
+    background: rgb(255, 102, 0);
+}
+
+.chaud {
+    background: orange;
+}
+
+.bon {
+    background: yellow;
+}
+
+.normal {
+    background: lightgreen;
+}
+
+.bof {
+    background-color:cornflowerblue;
+}
+
+.froid {
+    background-color:royalblue;
+}
